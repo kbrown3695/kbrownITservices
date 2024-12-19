@@ -7,7 +7,7 @@
 
  body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    line-height: 1.2;
    }
 
  .container {
@@ -46,7 +46,7 @@ h5 {
     justify-content: space-between;
     padding: 10px;
     height: 100px;
-    background-color: #1906e8;
+    background-color: #b7e806;
     color: rgb(5, 4, 4);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -98,7 +98,7 @@ justify-content: center;
 }
 
 .nav-bar a:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
 .menu-toggle {
@@ -114,7 +114,7 @@ justify-content: center;
     align-items: center;
     text-align: left;
     background: url(image/drone-png-46993.png) center/cover no-repeat;
-    color: #fff;
+    color: #ffffff;
     padding: 20px;
     height: 70vh;
     text-align: center;
@@ -133,9 +133,9 @@ justify-content: center;
     font-size: 1em;
     width: 140px;
     height: 36px;
-    border: 2px solid rgb(8, green212, blue8);
+    border: 2px solid rgb(8, 212, 8);
     background-color: transparent;
-    color: #fff;
+    color: #ffffff;
     transition: all ease 0.5s;
     cursor: pointer;
 }
@@ -180,3 +180,97 @@ justify-content: center;
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
+/* Testimonials Section */
+#testimonials {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#testimonials h2 {
+margin-bottom: 15px;
+padding-bottom: 10px;
+border-bottom: 3px solid #10aa34;
+}
+
+#testimonials p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    position: relative;
+} 
+
+#testimonials p::before {
+    content: ".";
+    color: #10aa34;
+    position: absolute;
+    left: 0;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-toggle{
+        display: block;
+    }
+
+    
+    .nav-bar {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #10aa34;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    ,nav-bar.active {
+        display: block;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-bar li {
+        margin: 10px 0;
+    }
+
+    .logo-container h1 {
+        font-size: 1,2rem;
+    }
+    .websites {
+        padding: 40px 15px;
+    }
+    .websites-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .websites-item img {
+        height: 180px;
+    }
+
+    #testimonial {
+        padding: 15px;
+    }
+
+    .main {
+        padding: 15px;
+    }
+
+    .mainText h1 {
+        font-size: 1.8em;
+    }
+
+    .mainText h3 {
+        font-size: 1.3em;
+    }
+}
+
